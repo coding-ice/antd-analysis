@@ -1,21 +1,21 @@
 {
-  "name": "@arvinxu/npm-template",
+  "name": "antd-analysis",
   "version": "1.11.1",
-  "description": "a npm develop template",
+  "description": "Analyze the antd source code",
   "keywords": [
     "npm",
     "template"
   ],
-  "homepage": "https://github.com/arvinxx/npm-template",
+  "homepage": "https://github.com/coding-ice/antd-analysis",
   "bugs": {
-    "url": "https://github.com/arvinxx/npm-template/issues/new"
+    "url": "https://github.com/coding-ice/antd-analysis/issues/new"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/arvinxx/npm-template.git"
+    "url": "https://github.com/coding-ice/antd-analysis.git"
   },
   "license": "MIT",
-  "author": "arvinxx(arvinx@foxmail.com)",
+  "author": "1597834867@qq.com",
   "sideEffects": false,
   "main": "lib/index.js",
   "module": "es/index.js",

@@ -1,7 +1,7 @@
 ---
 hero:
-  title: @arvinxu/npm-template
-  description: a npm develop template
+  title: antd-analysis
+  description: Analyze the antd source code
   actions:
     - text: 快速上手
       link: /guide
