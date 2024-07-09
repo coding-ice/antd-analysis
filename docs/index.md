@@ -3,19 +3,10 @@ hero:
   title: antd-analysis
   description: Analyze the antd source code
   actions:
-    - text: 快速上手
-      link: /guide
+    - text: 组件解析
+      link: /analysis
     - text: Github
-      link: /usage
+      link: https://github.com/coding-ice/antd-analysis
 ---
 
 <embed src="../README.md"></embed>
-
-工程框架选型如下：
-
-- 构建： father4
-- 文档： dumi2
-- CI: Github Action
-- CD:
-  - 文档发布: 使用 vercel 自动化触发文档站构建;
-  - npm 发布: 使用 `semantic-release` 实现 npm 包的自动化发布;
