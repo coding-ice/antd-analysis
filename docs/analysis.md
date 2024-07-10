@@ -50,14 +50,10 @@ export default App;
 
 ## 核心实现
 
-1. 创建`ConfigContext`
-2. 创建`ConfigProvider`组件，传递默认的`context`给`ProviderChildren`
-3. `ProviderChildren`中，在把一些`config`进行合并，一并传递给`ConfigContext.Provider`
-4. 最后任意组件中就可以拿到对应的配置了
-
 ```tsx
 import { useContext } from 'react';
 
+// 1. 创建`ConfigContext`
 const ConfigContext = React.createContext({
   name: 'default',
 });
@@ -65,13 +61,16 @@ const ConfigContext = React.createContext({
 const ProviderChildren = (props) => {
   const { children, ...rest } = props;
 
+  // 3. 在把一些config进行合并
   const mergedConfig = {
     ...rest,
   };
 
+  // 3.1 向下传递
   return <ConfigContext.Provider value={mergedConfig}>{children}</ConfigContext.Provider>;
 };
 
+// 2. 创建`ConfigProvider`组件，传递默认的`context`给`ProviderChildren`
 const ConfigProvider = (props) => {
   const context = useContext(ConfigContext);
 
@@ -79,6 +78,7 @@ const ConfigProvider = (props) => {
 };
 
 const Demo = () => {
+  // 4. 最后任意组件中就可以拿到对应的配置了
   const {
     theme: {
       components: { Button },
