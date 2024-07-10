@@ -58,6 +58,9 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "dependencies": {
+    "antd": "^5.19.1"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17",
     "@testing-library/react": "^14",
