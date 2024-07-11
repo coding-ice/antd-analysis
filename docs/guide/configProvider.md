@@ -1,7 +1,8 @@
 ---
 title: ConfigProvider
 group:
-  title: 组件解析
+  title: 其他
+  order: 99
 ---
 
 ## 前置知识 （useContext）

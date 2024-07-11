@@ -59,7 +59,8 @@
     ]
   },
   "dependencies": {
-    "antd": "^5.19.1"
+    "antd": "^5.19.1",
+    "classname": "^0.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17",
